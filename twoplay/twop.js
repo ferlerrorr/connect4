@@ -164,21 +164,24 @@ function checkWinner() {
 
 }
 
-$(function(){
-    $("#load_btn").click(function(){
-          $("#content").load("http://localhost/refresh_page_jquery/new_dynamic_content.php");
-     });
-  });
-
-
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
     if (board[r][c] == playerRed) {
-        alert('Red Wins');
-        window.location.reload();
+        // alert('Red Wins');
+        let confirmAction = confirm("Red Wins - Do you Want to play again?");
+        if (confirmAction) {
+          window.location.reload();
+        } else {
+          document.location.href = '../index.html';
+        }
     } else if (board[r][c] == playerYellow) {
-        alert('Yellow Wins');
-        window.location.reload();
+        // alert('Yellow Wins');
+        let confirmAction = confirm("Yellow Wins - Do you Want to play again?");
+        if (confirmAction) {
+          window.location.reload();
+        } else {
+          document.location.href = '../index.html';
+        }
     }
     gameOver = true;
 }

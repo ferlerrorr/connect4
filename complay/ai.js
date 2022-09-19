@@ -183,10 +183,24 @@ function checkForMoveVictory(){
     var ww = currentPlayer == 2 ? 'Computer' : 'Player';
     placeDisc(3-currentPlayer);
     if(ww == 'player'){
-      alert(ww+" Wins");
+      // alert(ww+" Wins");
+        let confirmAction = confirm(ww+" Wins - Do you Want to play again?");
+        if (confirmAction) {
+          window.location.reload();
+        } else {
+          document.location.href = '../index.html';
+        }
+      
     }
     else{
-      alert(ww+" Wins!");
+      // alert(ww+" Wins!");
+      let confirmAction = confirm(ww+" Wins Do you Want to play again?");
+      if (confirmAction) {
+        window.location.reload();
+      } else {
+        document.location.href = '../index.html';
+      }
+    
     }
     board.innerHTML = "";
     newgame();
@@ -214,3 +228,4 @@ function prepareField(){
 function moveit(who,where){
     document.getElementById('d'+who).style.top = where+'px';
 }
+
