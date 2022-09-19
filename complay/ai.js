@@ -159,7 +159,6 @@ function Disc(player){
     }
   }
 
-
   document.onclick = function(evt){
     if(currentPlayer == 1){
       if(possibleColumns().indexOf(currentCol) != -1){
@@ -190,17 +189,15 @@ function checkForMoveVictory(){
         } else {
           document.location.href = '../index.html';
         }
-      
     }
     else{
       // alert(ww+" Wins!");
-      let confirmAction = confirm(ww+" Wins Do you Want to play again?");
+      let confirmAction = confirm(ww+" Wins - Do you Want to play again?");
       if (confirmAction) {
         window.location.reload();
       } else {
         document.location.href = '../index.html';
       }
-    
     }
     board.innerHTML = "";
     newgame();

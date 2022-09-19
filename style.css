@@ -1,14 +1,19 @@
 body{
+    margin-top:10vh ;
     background:#eee;
     text-align:center;
-   
   }
   
   h1{
     text-align:center;
-    margin-bottom:5px;
+    margin-bottom:15px;
+    font-family: sans-serif;
+    color: navy;
+    font-weight:bold;
   }
   
+
+
   p.info{
     text-align:center;
     width:400px;
@@ -16,7 +21,8 @@ body{
     font-size:12px;
     font-weight:bold;
     color:#666;
-    margin-bottom:20px;
+    margin-bottom:35px;
+    font-family: sans-serif;
   }
 
   ul{
@@ -26,7 +32,21 @@ body{
     padding: 0;
     
   }
+  li{
+    margin: 20px 0 20px 0;
+  }
 
   a{
     text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight:bold;
+  }
+
+  .com{
+    color: #fc2323 ;
+  }
+
+  .two{
+    color: #ffd905;
   }
