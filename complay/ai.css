@@ -1,0 +1,58 @@
+body{
+  background:#eee;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:5px;
+}
+
+p.info{
+  text-align:center;
+  width:400px;
+  margin:0 auto;
+  font-size:12px;
+  font-weight:bold;
+  color:#666;
+  margin-bottom:20px;
+}
+
+#game-base{
+  width:439px;
+  height:375px;
+  margin:0 auto;
+  background-color: blue;
+  border: 10px solid navy;
+}
+
+#game-table{
+  position: relative;
+  z-index: 0;
+  margin: 0;
+  width: 442px;
+  height: 376px;
+  background-image: url(\img\con_4_outline.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.disc{
+  position:absolute;
+  z-index:-1;
+  border: solid 1px #ccc;
+  top:-25px;
+  left: 5px;
+  width:51px;
+  height:51px;
+  border-radius:46px;
+  transition:all .3s;
+}
+
+.disc.red{
+  background:#fc2323;
+}
+
+.disc.yellow{
+  background:#ffd905;
+}
