@@ -1,0 +1,25 @@
+Connect 4
+The goal of the game is to make 4 in a row:
+
+http://en.wikipedia.org/wiki/Connect_Four
+Ø  The server code should be written in php, js, css or other languages (learn how to setup a simple rails server if you don't know how). The logic should be written in JavaScript. The game should be played by two (human) players. Clicking on a column should place a piece.
+ Deliverable:
+Ø  Deploy the app on heroku or linode and provide a URL to access the app.
+ Specs:
+
+- Either player should be able to win by making 4 in a row in a vertical, horizontal, or diagonal (either direction) pattern. Y
+
+- The winner should be immediately announced once there is one, and no moves can be taken after. Y
+
+- It should be possible to reach a draw state. A draw state is when there is no possible move left for either player. Y
+
+- It should not falsely and/or prematurely declare a player as a winner or a draw.  Y
+
+- Wins are saved on a scoreboard, per user. X
+
+- Make a computer player (AI) to play vs the player. Please note than an AI should not just choose a random move. Y
+
+- Bonus: Multiplayer mode, multiple sessions Y
+ Kindly also deploy or upload it to GitHub and provide me the URLs so I can check the source codes. Y
+  
+Make sure that you code this yourself - don't plagiarize from online resources!

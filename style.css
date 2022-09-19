@@ -3,7 +3,6 @@ body{
     background:#eee;
     text-align:center;
   }
-  
   h1{
     text-align:center;
     margin-bottom:15px;
@@ -11,9 +10,6 @@ body{
     color: navy;
     font-weight:bold;
   }
-  
-
-
   p.info{
     text-align:center;
     width:400px;
@@ -24,16 +20,16 @@ body{
     margin-bottom:35px;
     font-family: sans-serif;
   }
-
   ul{
     list-style: none;
     text-align:center;
     margin: 0;
     padding: 0;
-    
+    z-index: 1;
   }
   li{
     margin: 20px 0 20px 0;
+    z-index: 1;
   }
 
   a{
@@ -41,6 +37,7 @@ body{
     font-size: 20px;
     font-family: sans-serif;
     font-weight:bold;
+    z-index: 1;
   }
 
   .com{

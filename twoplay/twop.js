@@ -185,3 +185,11 @@ function setWinner(r, c) {
     }
     gameOver = true;
 }
+
+
+//back to menu
+$("body").keydown(function(e) {
+    if(e.keyCode == 27) { // escape key
+      document.location.href = '../index.html';
+    }
+  });
